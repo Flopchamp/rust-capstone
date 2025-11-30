@@ -1,0 +1,30 @@
+# Rust build output
+/target/
+
+# Cargo package manager files
+**/Cargo.lock
+
+# Executables and debug files
+**/*.exe
+**/*.pdb
+**/*.d
+
+# Incremental compilation files
+**/incremental/
+
+# Byproducts of 'cargo test', 'cargo bench', etc.
+**/*.log
+
+# IDE/editor files
+/.vscode/
+/.idea/
+/*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Misc
+CACHEDIR.TAG
+.rustc_info.json
