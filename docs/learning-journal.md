@@ -1,12 +1,12 @@
 # Rust Task Manager - Learning Journal
 
-**Author:** [Your Name - Replace with your actual name]
+**Author:** Harrison Onyango Aloo
 **Project:** Moringa School Capstone - Rust Task Manager  
-**Start Date:** November 30, 2025
+
 
 ---
 
-## 📋 Project Overview
+##  Project Overview
 
 **Technology Chosen:** Rust Programming Language
 
@@ -25,11 +25,11 @@ Build a fully functional CLI task manager that can:
 
 ---
 
-## 🚀 Day 1: Installation, Setup & First Working Code
+##  Day 1: Installation, Setup & First Working Code
 
 **Date:** November 30, 2025  
 **Time Investment:** ~2.5 hours  
-**Status:** ✅ SUCCESSFUL - Working code deployed!
+**Status:**  SUCCESSFUL - Working code deployed!
 
 ---
 
@@ -80,23 +80,23 @@ error: linking with `link.exe` failed: exit code: 1181
 **Root Cause Analysis:**
 
 The error indicated the linker couldn't find Windows system libraries. This meant:
-- ✅ Rust was installed correctly
-- ✅ Windows SDKs were installed
-- ❌ MSVC C++ compiler was NOT installed
+-  Rust was installed correctly
+-  Windows SDKs were installed
+-  MSVC C++ compiler was NOT installed
 
 **Diagnosis Process:**
 
 1. Checked Windows SDK installation:
 ```powershell
 dir "C:\Program Files (x86)\Windows Kits\10\Lib"
-# Result: ✅ SDK found
+# Result:  SDK found
 ```
 
 2. Opened Visual Studio Installer and checked components
 3. Discovered in "Individual components" tab:
-   - ✅ Windows 11 SDK (10.0.26100.6901) - Checked
-   - ✅ Windows 10 SDK (10.0.19041.0) - Checked
-   - ❌ MSVC v143 - VS 2022 C++ x64/x86 build tools - **NOT CHECKED**
+   -  Windows 11 SDK (10.0.26100.6901) - Checked
+   -  Windows 10 SDK (10.0.19041.0) - Checked
+   -  MSVC v143 - VS 2022 C++ x64/x86 build tools - **NOT CHECKED**
 
 **Solution:**
 
@@ -115,7 +115,7 @@ dir "C:\Program Files (x86)\Windows Kits\10\Lib"
 
 ---
 
-### ✅ SUCCESS - First Rust Program Compiled!
+###  SUCCESS - First Rust Program Compiled!
 
 **Timestamp:** ~12:40 AM
 
@@ -129,10 +129,10 @@ Hello, world!
 ```
 
 **What This Confirmed:**
-- ✅ Rust compiler (rustc) working
-- ✅ Cargo build system working
-- ✅ MSVC linker working
-- ✅ Complete toolchain operational
+-  Rust compiler (rustc) working
+-  Cargo build system working
+-  MSVC linker working
+-  Complete toolchain operational
 
 **Compilation Speed:** 2.73 seconds (impressively fast!)
 
@@ -257,18 +257,18 @@ The unused imports warning is expected - we'll need `std::io::{self, Write}` tom
 
 ## Features Implemented - Day 1
 
-### ✅ Task Struct
+###  Task Struct
 - Stores task ID (auto-incrementing number)
 - Stores description (user's task text)
 - Stores completion status (true/false)
 - Uses `#[derive(Debug)]` for debugging output
 
-### ✅ TaskManager Struct
+###  TaskManager Struct
 - Maintains vector of all tasks
 - Tracks next available ID
 - Provides clean interface for task operations
 
-### ✅ Add Task Functionality
+###  Add Task Functionality
 ```rust
 fn add_task(&mut self, description: String)
 ```
@@ -277,7 +277,7 @@ fn add_task(&mut self, description: String)
 - Displays confirmation message
 - Uses `&mut self` because it modifies the manager's state
 
-### ✅ List Tasks Functionality
+###  List Tasks Functionality
 ```rust
 fn list_tasks(&self)
 ```
@@ -376,7 +376,7 @@ Keep it beginner-friendly with practical examples.
 **Key Takeaways:**
 [What I learned from this prompt]
 
-**Helpfulness Rating:** [1-5 stars] ⭐⭐⭐⭐⭐
+
 
 **How It Helped My Project:**
 [Specific ways this knowledge improved my understanding or code]
@@ -532,26 +532,26 @@ fn add_task(&mut self)     // Borrow for writing
 
 ## Reflections - Day 1
 
-### What Went Well ✅
+### What Went Well 
 - Successfully navigated two major installation issues
 - Understood and fixed linker problems independently
 - Wrote working Rust code on first day
 - Grasped basic ownership concepts
 - Project structure is clean and organized
 
-### What Was Challenging 😅
+### What Was Challenging 
 - Windows-specific toolchain setup (MSVC requirements)
 - Understanding why certain components were needed
 - Differentiating between String and &str
 - Remembering when to use & in method parameters
 
-### Surprises 😲
+### Surprises 
 - Rust's error messages are incredibly helpful
 - Compilation is much faster than expected
 - The ownership system makes sense with practice
 - Cargo automates so much (project structure, builds, dependencies)
 
-### Key Insights 💡
+### Key Insights 
 1. **Front-load the hard stuff:** Installation issues are common but solvable
 2. **Document everything:** Future me will thank present me
 3. **Compiler is a teacher:** Error messages guide you to correct code
@@ -580,7 +580,7 @@ fn add_task(&mut self)     // Borrow for writing
 
 ## Plan for Day 2
 
-### Goals 🎯
+### Goals 
 
 **Feature 1: Interactive Command Loop**
 - Implement infinite loop for user commands
@@ -606,7 +606,7 @@ fn load_from_file(&mut self, filename: &str) -> io::Result<()>
 - Load tasks on startup
 - Handle file I/O errors gracefully
 
-### AI Prompts to Use 📝
+### AI Prompts to Use 
 
 **Prompt 1: Command Loop**
 ```
@@ -652,14 +652,14 @@ Show me how to implement file persistence in Rust:
 
 ## Questions to Explore
 
-### Answered ✅
+### Answered 
 - ~~Why does Rust need Visual Studio tools on Windows?~~
   - Answer: Needs MSVC linker and Windows SDK for native compilation
 
 - ~~What's the difference between &self and &mut self?~~
   - Answer: Immutable vs mutable borrowing
 
-### Still Exploring 🤔
+### Still Exploring 
 - How does Rust's lifetime system work in detail?
 - When should I use Box<T> vs regular values?
 - What are the performance implications of String vs &str?
@@ -757,7 +757,7 @@ High! The feeling of overcoming compilation errors and seeing "Hello, world!" wa
 
 ## Day 1 Summary
 
-**Status:** ✅ COMPLETE AND SUCCESSFUL
+**Status:**  COMPLETE AND SUCCESSFUL
 
 **Major Achievements:**
 1. Full Rust toolchain installed and working
@@ -850,4 +850,5 @@ Can't modify data while holding a reference to it. Rust prevents data races at c
 *This journal will be updated daily throughout the capstone project.*
 
 **Total Word Count:** ~5,000+ words  
+
 **Last Updated:** November 30, 2025 - 1:00 AM
