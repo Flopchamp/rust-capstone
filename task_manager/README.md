@@ -32,7 +32,7 @@ quit                 # Save and exit
 
 ### Example Usage
 ```
-🦀 Welcome to Rust Task Manager!
+ Welcome to Rust Task Manager!
 Commands: add <description>, list, complete <id>, quit
 
 > add Learn Rust basics
@@ -51,7 +51,7 @@ Commands: add <description>, list, complete <id>, quit
 ✓ Task 1 marked as completed!
 
 > quit
-Tasks saved. Goodbye! 👋
+Tasks saved. Goodbye! 
 ```
 
 ## Project Structure
