@@ -36,8 +36,7 @@ Build a fully functional CLI task manager that can:
 ## Installation Journey
 
 ### Initial Installation Attempt
-
-**Started:** ~12:00 AM  
+ 
 **Tool Used:** rustup-init.exe from https://rustup.rs
 
 **First Challenge Encountered:**
@@ -117,7 +116,7 @@ dir "C:\Program Files (x86)\Windows Kits\10\Lib"
 
 ###  SUCCESS - First Rust Program Compiled!
 
-**Timestamp:** ~12:40 AM
+
 
 **Command Executed:**
 ```powershell
@@ -255,7 +254,7 @@ The unused imports warning is expected - we'll need `std::io::{self, Write}` tom
 
 ---
 
-## Features Implemented - Day 1
+## Features Implemented -
 
 ###  Task Struct
 - Stores task ID (auto-incrementing number)
@@ -350,12 +349,12 @@ The `&` is crucial - without it, we'd move the tasks out of the vector.
 
 ---
 
-## AI Prompts Used - Day 1
+## AI Prompts Used 
 
 ### Prompt 1: Understanding Basic Rust Concepts
 
 **Date:** November 30, 2025  
-**Timestamp:** 12:50 AM
+
 
 **Prompt:**
 ```
@@ -530,7 +529,7 @@ fn add_task(&mut self)     // Borrow for writing
 
 ---
 
-## Reflections - Day 1
+## Reflections 
 
 ### What Went Well 
 - Successfully navigated two major installation issues
@@ -578,7 +577,6 @@ fn add_task(&mut self)     // Borrow for writing
 
 ---
 
-## Plan for Day 2
 
 ### Goals 
 
@@ -755,7 +753,7 @@ High! The feeling of overcoming compilation errors and seeing "Hello, world!" wa
 
 ---
 
-## Day 1 Summary
+## Summary
 
 **Status:**  COMPLETE AND SUCCESSFUL
 
@@ -775,11 +773,11 @@ High! The feeling of overcoming compilation errors and seeing "Hello, world!" wa
 - Need more practice with ownership rules
 - Ready to tackle interactive features tomorrow
 
-**Next Session:** Day 2 - Interactive commands and file persistence
+
 
 ---
 
-*End of Day 1 Learning Journal*
+
 
 ---
 
@@ -849,6 +847,5 @@ Can't modify data while holding a reference to it. Rust prevents data races at c
 
 *This journal will be updated daily throughout the capstone project.*
 
-**Total Word Count:** ~5,000+ words  
 
-**Last Updated:** November 30, 2025 - 1:00 AM
+
